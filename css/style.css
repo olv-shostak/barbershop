@@ -1,6 +1,10 @@
 :root {
   --pretty-color: #ff6c00;
   --while-color: #ffffff;
+  --black-color: #303030;
+  --grey-op: rgba(157, 164, 189, 0.6);
+  --grey: #9da4bd;
+  --dark-grey: #555555;
   --main-font: "Open Sans", sans-serif;
   --accent-font: "Raleway", sans-serif;
 }
@@ -13,6 +17,13 @@
 
 body {
   font-family: var(--main-font);
+  font-style: normal;
+  font-weight: normal;
+  color: var(--black-color);
+}
+
+address {
+  font-style: normal;
 }
 
 a {
@@ -40,19 +51,131 @@ ul {
   border-radius: 25px;
 }
 
+.pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: var(--accent-font);
+  font-size: 42px;
+  line-height: 1.167;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+}
+
+.media-list .link:hover,
+.media-list .link:focus {
+  color: var(--pretty-color);
+}
+
+/* HEADER */
+
 .sign-link:focus,
 .sign-link:hover {
   background-color: var(--pretty-color);
+  color: var(--while-color);
 }
 
+.contact-section .sign-link {
+  padding: 12px 38px;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.contact-section .sign-link:focus,
+.contact-section .sign-link:hover {
+  background-color: var(--pretty-color);
+}
+
+/* HEADER */
+
 .header {
-  background-color: black;
+  background-color: var(--black-color);
   color: var(--while-color);
 }
 
 .nav-list a:hover,
 .nav-list a:focus,
 .media-list a:hover,
-.media-list a:focus {
+.media-list a:focus,
+.tel:hover,
+.tel:focus {
   color: var(--pretty-color);
+}
+
+/* MAIN */
+
+/* Hero */
+
+.hero {
+  background-color: var(--black-color);
+  color: var(--while-color);
+}
+
+.hero .pre-title {
+  color: var(--grey-op);
+}
+
+.hero .title {
+  font-size: 72px;
+  line-height: 1.181;
+}
+
+.hero .text {
+  color: var(--grey);
+}
+
+.slider-buttons button {
+  color: var(--grey-op);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--grey-op);
+  cursor: pointer;
+  width: 60px;
+  text-align: left;
+  padding-bottom: 8px;
+}
+
+.slider-buttons .button-forward {
+  text-align: right;
+}
+
+.slider-buttons button:hover,
+.slider-buttons button:focus {
+  color: var(--while-color);
+  border-bottom: var(--while-color);
+  border-bottom: 1px solid var(--while-color);
+}
+
+/* About us */
+
+.about .description {
+  font-size: 14px;
+  line-height: 1.857;
+  color: var(--dark-grey);
+}
+
+/* Price-section */
+
+.price-section {
+  background-color: var(--black-color);
+  color: var(--while-color);
+}
+
+/* Contact-section */
+
+.contact-section {
+  background-color: var(--black-color);
+  color: var(--while-color);
 }
