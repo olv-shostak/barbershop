@@ -9,12 +9,6 @@
   --accent-font: "Raleway", sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: var(--main-font);
   font-style: normal;
@@ -22,21 +16,9 @@ body {
   color: var(--black-color);
 }
 
-address {
-  font-style: normal;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style: none;
-}
-
 .container {
   width: 1200px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -123,6 +105,12 @@ ul {
   color: var(--while-color);
 }
 
+.hero .container {
+  padding-left: 225px;
+  padding-bottom: 40px;
+  padding-top: 272px;
+}
+
 .hero .pre-title {
   color: var(--grey-op);
 }
@@ -130,10 +118,16 @@ ul {
 .hero .title {
   font-size: 72px;
   line-height: 1.181;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .hero .text {
   color: var(--grey);
+}
+
+.slider-buttons {
+  text-align: right;
 }
 
 .slider-buttons button {
@@ -145,6 +139,8 @@ ul {
   width: 60px;
   text-align: left;
   padding-bottom: 8px;
+  font-size: 11px;
+  line-height: 1.364;
 }
 
 .slider-buttons .button-forward {
@@ -159,6 +155,18 @@ ul {
 }
 
 /* About us */
+
+.about .container {
+  padding-top: 161px;
+  padding-bottom: 99px;
+}
+
+.about-images-list {
+}
+
+.about-images-list li:first-child {
+  margin-right: 30px;
+}
 
 .about .description {
   font-size: 14px;
